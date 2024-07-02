@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roadmap</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js"></script>
+</head>
+<body>
+    <div id="roadmap">
+        <div class="column" id="C2">
+            <h2>C2</h2>
+            <div class="tasks" id="tasks-C2"></div>
+            <button onclick="addTask('C2')">Add Task</button>
+        </div>
+        <div class="column" id="Platform">
+            <h2>Платформа</h2>
+            <div class="tasks" id="tasks-Platform"></div>
+            <button onclick="addTask('Platform')">Add Task</button>
+        </div>
+        <div class="column" id="RobotTemplates">
+            <h2>Шаблоны робота</h2>
+            <div class="tasks" id="tasks-RobotTemplates"></div>
+            <button onclick="addTask('RobotTemplates')">Add Task</button>
+        </div>
+        <div class="column" id="Discussion">
+            <h2>Обсуждение</h2>
+            <div class="tasks" id="tasks-Discussion"></div>
+            <button onclick="addTask('Discussion')">Add Task</button>
+        </div>
+        <div class="column" id="Rejected">
+            <h2>Отклоненные</h2>
+            <div class="tasks" id="tasks-Rejected"></div>
+            <button onclick="addTask('Rejected')">Add Task</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
